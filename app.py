@@ -87,8 +87,8 @@ with tab_pred:
             f"<b style='color:{color}'>{g}</b></div>", unsafe_allow_html=True)
 
         # 물-시멘트비 참고 지표
-        if vals.get("cement", 0) > 0:
-            wc = vals["water"] / vals["cement"]
+        if vals.get("시멘트", 0) > 0:
+            wc = vals["물"] / vals["시멘트"]
             st.caption(f"물-시멘트비(W/C) ≈ {wc:.2f}  (낮을수록 강도↑)")
 
 # ---------- batch ----------
